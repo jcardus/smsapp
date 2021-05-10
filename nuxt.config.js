@@ -76,7 +76,7 @@ export default {
   firebase: {
     config: {
       apiKey: "AIzaSyD-XRzg0x1R3qdLi7Bm_yC04-aXEFPEeFI",
-      authDomain: "fleetmap.io",
+      authDomain: "smsapp-5e9eb.firebaseapp.com",
       projectId: "smsapp-5e9eb",
       storageBucket: "smsapp-5e9eb.appspot.com",
       messagingSenderId: "980069650765",
