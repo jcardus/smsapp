@@ -44,7 +44,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/firebase'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -71,5 +72,24 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  firebase: {
+    config: {
+      apiKey: "AIzaSyD-XRzg0x1R3qdLi7Bm_yC04-aXEFPEeFI",
+      authDomain: "fleetmap.io",
+      projectId: "smsapp-5e9eb",
+      storageBucket: "smsapp-5e9eb.appspot.com",
+      messagingSenderId: "980069650765",
+      appId: "1:980069650765:web:15d3f2dbc0cc0940166704",
+      measurementId: "G-1FX6MFL904"
+    },
+    services: {
+      auth: {
+        initialize: {
+          onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+          subscribeManually: false
+        }
+      }
+    }
   }
 }

@@ -80,6 +80,7 @@ export default {
       rightDrawer: false,
       title: 'smsApp'
     }
-  }
+  },
+  middleware: ['auth']
 }
 </script>
